@@ -9,7 +9,7 @@ import com.c.java.leetcode.common.TreeNode;
  **/
 public class A101isSymmetric {
     public static void main(String[] args) {
-        System.out.println(new A101isSymmetric().isSymmetric(Helper.initTreeNodes(new int[]{1, 2, 2, 3, 1, 4, 3})));
+        System.out.println(new A101isSymmetric().isSymmetric(Helper.initTreeNodes(new String[]{})));
     }
 
     public boolean isSymmetric(TreeNode root) {

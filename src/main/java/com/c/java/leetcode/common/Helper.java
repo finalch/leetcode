@@ -6,18 +6,23 @@ package com.c.java.leetcode.common;
  **/
 public class Helper {
     public static void main(String[] args) {
-        Helper.initTreeNodes(new int[]{1, 2, 2, 3, 4, 4, 3});
+        Helper.initTreeNodes(new String[]{"1", "2", null, "3", "4", null, null, "4", "3"});
     }
 
-    public static TreeNode initTreeNodes(int[] nums) {
+    public static TreeNode initTreeNodes(String[] nums) {
         if (nums == null || nums.length == 0) {
             return null;
         }
-        return dp(nums, 0);
+        TreeNode f = dp(nums, 0);
+        return f;
     }
 
-    private static TreeNode dp(int[] nums, int i) {
-        TreeNode treeNode = new TreeNode(nums[i]);
+
+    private static TreeNode dp(String[] nums, int i) {
+        if (nums[i] == null) {
+            return null;
+        }
+        TreeNode treeNode = new TreeNode(Integer.parseInt(nums[i]));
         int l = (i << 1) + 1;
         int r = (i << 1) + 2;
         if (l < nums.length) {

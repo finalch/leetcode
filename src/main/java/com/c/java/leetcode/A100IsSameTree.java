@@ -9,8 +9,8 @@ import com.c.java.leetcode.common.TreeNode;
  **/
 public class A100IsSameTree {
     public static void main(String[] args) {
-        TreeNode p = Helper.initTreeNodes(new int[]{1, 0, 3});
-        TreeNode q = Helper.initTreeNodes(new int[]{1, 2, 3});
+        TreeNode p = Helper.initTreeNodes(new String[]{"1", "0", "3"});
+        TreeNode q = Helper.initTreeNodes(new String[]{"1", "2", "3"});
         System.out.println(new A100IsSameTree().isSameTree(p, q));
     }
 
