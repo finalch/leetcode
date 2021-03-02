@@ -1,4 +1,4 @@
-package com.c.java.leetcode;
+package com.finalch.leetcode;
 
 /**
  * @author: cjianping on 2020/8/7 17:55

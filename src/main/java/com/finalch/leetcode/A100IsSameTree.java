@@ -1,7 +1,7 @@
-package com.c.java.leetcode;
+package com.finalch.leetcode;
 
-import com.c.java.leetcode.common.Helper;
-import com.c.java.leetcode.common.TreeNode;
+import com.finalch.leetcode.common.Helper;
+import com.finalch.leetcode.common.TreeNode;
 
 /**
  * @author liufan

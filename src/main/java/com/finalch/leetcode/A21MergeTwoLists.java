@@ -1,6 +1,6 @@
-package com.c.java.leetcode;
+package com.finalch.leetcode;
 
-import com.c.java.leetcode.common.ListNode;
+import com.finalch.leetcode.common.ListNode;
 
 /**
  * @author liufan

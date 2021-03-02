@@ -1,4 +1,4 @@
-package com.c.java.leetcode;
+package com.finalch.leetcode;
 
 import java.util.HashSet;
 import java.util.Iterator;

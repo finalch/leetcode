@@ -1,4 +1,4 @@
-package com.c.java.leetcode;
+package com.finalch.leetcode;
 
 /**
  * @author finalch@163.com

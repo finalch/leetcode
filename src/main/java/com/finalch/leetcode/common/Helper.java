@@ -1,4 +1,4 @@
-package com.c.java.leetcode.common;
+package com.finalch.leetcode.common;
 
 /**
  * @author liufan
