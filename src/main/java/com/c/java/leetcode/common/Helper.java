@@ -6,10 +6,10 @@ package com.c.java.leetcode.common;
  **/
 public class Helper {
     public static void main(String[] args) {
-        Helper.init(new int[]{1, 2, 2, 3, 4, 4, 3});
+        Helper.initTreeNodes(new int[]{1, 2, 2, 3, 4, 4, 3});
     }
 
-    public static TreeNode init(int[] nums) {
+    public static TreeNode initTreeNodes(int[] nums) {
         if (nums == null || nums.length == 0) {
             return null;
         }

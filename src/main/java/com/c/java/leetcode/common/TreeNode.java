@@ -5,9 +5,9 @@ package com.c.java.leetcode.common;
  * @date 2021/3/2 09:52
  **/
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
     TreeNode() {
     }
