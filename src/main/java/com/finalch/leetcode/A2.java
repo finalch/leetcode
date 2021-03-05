@@ -1,5 +1,7 @@
 package com.finalch.leetcode;
 
+import com.finalch.leetcode.common.ListNode;
+
 /**
  * @author: cjianping on 2020/8/7 17:55
  * <p>
@@ -19,9 +21,9 @@ package com.finalch.leetcode;
  * 链接：https://leetcode-cn.com/problems/add-two-numbers
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class AddTwoNumbers {
+public class A2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode m = null, n = null;
+        ListNode head = null, next = null;
         ListNode p = l1, q = l2;
         int s = 0;
         while (p != null || q != null) {
@@ -37,28 +39,18 @@ public class AddTwoNumbers {
             int t = a + b + s;
             s = t > 9 ? 1 : 0;
             ListNode listNode = new ListNode(t - 10 * s);
-            if (n == null) {
-                n = listNode;
-                m = listNode;
+            if (next == null) {
+                head = listNode;
+                next = listNode;
             } else {
-                n.next = listNode;
+                next.next = listNode;
+                next = next.next;
             }
-
         }
         if (s == 1) {
             ListNode listNode = new ListNode(1);
-            n.next = listNode;
+            next.next = listNode;
         }
-        return m;
+        return head;
     }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
 }
